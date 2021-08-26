@@ -31,4 +31,25 @@ window.onload = function(){
     
     container.style.display = 'block';
 
+
+    let logo = document.querySelector('.logoDH');
+    let menuDisplay = document.getElementById('menu');
+
+    // Show menu clicking logo 
+    logo.addEventListener('click', function() {  
+        menuDisplay.classList.toggle('mostrar');
+    });
+
+    // Hide menu when mouse out menu
+    menuDisplay.addEventListener('mouseout', function() { 
+        menuDisplay.classList.toggle('mostrar')
+    });
+
+    // // Alternative way to hide menu when mouse out menu
+    // menuDisplay.addEventListener('mouseover', function() {
+    //     menuDisplay.classList.add('mostrar')
+    // });
+    // menuDisplay.addEventListener('mouseout', function() {
+    //     menuDisplay.classList.remove('mostrar')
+    // });
 }

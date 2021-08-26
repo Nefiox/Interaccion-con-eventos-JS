@@ -14,4 +14,11 @@ window.onload = function(){
     moviesListTitulo.style.backgroundColor = 'teal';
     moviesListTitulo.style.padding = '20px';
 
+    // Dark mode when mouse over logo
+    let logo = document.querySelector('figure');
+
+    logo.addEventListener('mouseover', function() {
+        body.style.backgroundColor = '#7F7F7F';
+        body.classList.add('fondoMoviesList');
+    });        
 }

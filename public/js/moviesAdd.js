@@ -7,6 +7,8 @@ window.onload = function(){
     article.classList.add('fondoTransparente');
     formulario.classList.add('fondoCRUD');
 
-
-
+    // Title (h1) color change when mouse over
+    titulo.addEventListener('mouseover', () => {
+        titulo.style.color = 'orange'
+    })
 }
